@@ -25,13 +25,13 @@ paint <- function (dat, variables, UTFRREC){
       trait <- new.traits[,i]
       names(trait) <- plot.dat[,1]
       print(trait)
-      painted.tree <- phytools::plotSimmap(phytools::make.simmap(corr.tree, trait), pts=FALSE, fsize=1)
+      painted.tree <- phytools::plotSimmap(phytools::make.simmap(paint.tree, trait), pts=FALSE, fsize=1)
       coloring <- stats::setNames(palette()[1:length(unique(trait))],sort(unique(trait)))
       painted.tree <- phytools::add.simmap.legend(colors = coloring)
     } else {
       trait <- new.traits[,i]
       names(trait) <- plot.dat[,1]
-      cont.tree <- phytools::contMap(corr.tree, trait, res=100, fsize=0.8, legend=TRUE)
+      cont.tree <- phytools::contMap(paint.tree, trait, res=100, fsize=0.8, legend=TRUE)
       painted.tree <- plot(cont.tree, legend = TRUE)
     }
   }
