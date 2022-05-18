@@ -1,0 +1,13 @@
+Package: phylocking
+Type: Package
+Title: Examines Traits of East Tennessee Birds
+Version: 0.1.0
+Author: Heather J. B. Brooks
+Maintainer: Heather J. B. Brooks <hbrooks9@vols.utk.edu>
+Description: This package uses continuous and discrete data to examine phylogenetic relationships in bird species found at the University of Tennessee, Knoxville's Forestry Resources and AgResearch and Education Center (UTFRREC).
+License: use_mit_license()
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
